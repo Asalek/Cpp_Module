@@ -23,7 +23,7 @@ class zombie
 		{name = aname;}
 		~zombie(void)
 		{
-			cout<<name<<"killed by Ada Wong"<<endl;
+			cout<<name<<" killed by Ada Wong"<<endl;
 		}
 };
 //-----------------Zombie Functions

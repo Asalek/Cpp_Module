@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/asalek/Desktop/Cpp_Module'
+make: Leaving directory `/Users/asalek/Desktop/Cpp_Module'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

@@ -26,7 +26,7 @@ void	Harl::WARNING(void)
 void	Harl::complain(string level)
 {
 	string complains [4] = {"DEBUG", "ERROR", "INFO", "WARNING"};
-	void (Harl::*funcs[4])(void);
+	void (Harl::*funcs[4])();
 	int	i;
 
 	funcs[0] = &Harl::DEBUG;

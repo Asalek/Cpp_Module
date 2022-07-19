@@ -12,16 +12,12 @@ Fixed::Fixed(const Fixed &obj)
 	*this = obj;
 }
 
-// A simplistic implementation of operator= //if = found do this // if + - / ...
 Fixed & Fixed::operator= (const Fixed &obj)
 {
 	cout<<"Copy assignment operator called"<<endl;
-	//self-assignment guard
 	if (this == &obj)
         return *this;
-    // do the copy
     fixedPoint = obj.getRawBits();
-    // return the existing object so we can chain this operator
     return *this;
 }
 
@@ -32,7 +28,6 @@ Fixed::~Fixed()
 
 int	Fixed::getRawBits() const
 {
-	cout<<"getRawBits member function called"<<endl;
 	return (fixedPoint);
 }
 
@@ -44,23 +39,24 @@ void	Fixed::setRawBits(int const raw)
 
 Fixed::Fixed(const int a)
 {
-	this->fixedPoint = a;
+	cout<<"Int constructor called"<<endl;
+	fixedPoint = (int)(roundf(a * 256)); //(1 << fB)
 }
 
 Fixed::Fixed(const float n)
 {
-	(float)fixedPoint; // (float)fixedPoint = n; //why it didn't work
-	fixedPoint = n;
+	cout<<"Float constructor called"<<endl;
+	fixedPoint = (int)(roundf(n * 256));
 }
 
 float	Fixed::toFloat() const
 {
-	return ((float)this->fixedPoint);
+	return ((double)this->fixedPoint / (double)256);
 }
 
 int	Fixed::toInt() const
 {
-	return ((int)this->fixedPoint);
+	return ((int)this->fixedPoint / (int)256);
 }
 
 ostream &operator<< (ostream &out, const Fixed &flt)

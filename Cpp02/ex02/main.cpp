@@ -20,6 +20,10 @@ int main( void )
 	cout << "a < b : " << (a < b) << endl;
 	cout << "a == b : " << (a == b) << endl;
 	cout << "a != b : " << (a != b) << endl;
+	a = 12;
+	cout << a << endl;
+	cout << b << endl;
+	cout << "a / b : " << (a / b) << endl;
 
 	return (0);
 }

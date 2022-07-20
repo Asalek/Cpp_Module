@@ -160,8 +160,8 @@ Fixed Fixed::operator-(const Fixed &ff)
 
 Fixed Fixed::operator/(const Fixed &ff)
 {
-	this->fixedPoint /= ff.fixedPoint;
-	return *this;
+	Fixed fix (this->toFloat() / ff.toFloat());
+	return fix;
 }
 
 Fixed Fixed::min(const Fixed &a, const Fixed &b)

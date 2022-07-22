@@ -11,9 +11,9 @@ class ClappTrapp
 {
 	private:
 		string	name;
-		int		HitPoint = 10;	//Player Health
-		int		energyPoint = 10;
-		int		attackDamage = 0;
+		int		HitPoint;	//Player Health
+		int		energyPoint;
+		int		attackDamage;
 	public:
 		void	attack(const string &target);
 		void	takeDamage(unsigned int	amount);

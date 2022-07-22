@@ -2,11 +2,18 @@
 
 ClappTrapp::ClappTrapp()
 {
+	this->attackDamage = 0;
+	this->energyPoint = 10;
+	this->HitPoint = 10;
+	this->name = "NoName";
 	cout << "Default Constructor Called"<<endl;
 }
 
 ClappTrapp::ClappTrapp(string name)
 {
+	this->attackDamage = 0;
+	this->energyPoint = 10;
+	this->HitPoint = 10;
 	this->name = name;
 	cout << "Set Name Constructor have been called"<<endl;
 }
@@ -39,8 +46,8 @@ void	ClappTrapp::attack(const string &target)
 	if (energyPoint > 0 && HitPoint > 0)
 	{	
 		energyPoint--;
-		cout <<"ClapTrap "<< name << "attacks " << target << \
-		", causing " << attackDamage <<"points of damage!" << endl;
+		cout <<"ClapTrap "<< name << " attacks " << target << \
+		", causing " << attackDamage <<" points of damage!" << endl;
 	}
 	else
 		cout << "No Point Left" << endl;

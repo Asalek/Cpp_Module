@@ -26,3 +26,15 @@ void	FragTrap::highFivesGuys()
 {
 	cout << "Give me your hand HIGH FIIIIVE"<<endl;
 }
+
+void	FragTrap::attack(const string &target)
+{
+	if (getEP() > 0 && getHP() > 0)
+	{
+		setEP(getEP() - 1);
+		cout <<"FragTrap "<< getName() << " attacks " << target << \
+		", causing " << getAD() <<" points of damage!" << endl;
+	}
+	else
+		cout << "No Point Left" << endl;
+}

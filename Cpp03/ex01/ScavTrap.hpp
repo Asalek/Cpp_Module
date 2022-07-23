@@ -10,6 +10,7 @@ class ScavTrap:public ClappTrapp
 		ScavTrap(string name);
 		~ScavTrap();
 		void	GuardGate();
+		void	attack(const string &target);
 };
 
 #endif

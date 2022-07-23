@@ -10,6 +10,7 @@ class FragTrap: public ClappTrapp
 		FragTrap(string name);
 		~FragTrap();
 		void	highFivesGuys(void);
+		void	attack(const string &target);
 };
 
 #endif

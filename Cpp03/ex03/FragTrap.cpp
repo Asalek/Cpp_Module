@@ -7,7 +7,7 @@ FragTrap::~FragTrap()
 
 FragTrap::FragTrap():ClappTrapp()
 {
-	setName("no name");
+	setName("nOname");
 	setHP(100);
 	setEP(100);
 	setAD(30);

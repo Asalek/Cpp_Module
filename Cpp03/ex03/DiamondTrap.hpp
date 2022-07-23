@@ -14,6 +14,7 @@ class DiamondTrap: public ScavTrap, FragTrap
 		DiamondTrap(string name);
 		~DiamondTrap();
 		void	attack(const string &target);
+		void	whoAmI();
 };
 
 #endif

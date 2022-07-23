@@ -2,7 +2,7 @@
 
 ScavTrap::ScavTrap():ClappTrapp()
 {
-	setName("no name");
+	setName("noName");
 	setHP(100);
 	setEP(50);
 	setAD(20);

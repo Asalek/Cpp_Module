@@ -8,7 +8,7 @@ int main()
 	ClappTrapp	asalek("asalek");
 	ClappTrapp	AyoubSalek(asalek);
 	ScavTrap	scav;
-	ClappTrapp	*c = &scav;  //anything ClappTrapp can do ScavTrap can do too
+	ClappTrapp	*c = &scav;
 	FragTrap	frag("Windows");
 
 	asalek.attack("Hamza Adaoud");
@@ -19,7 +19,7 @@ int main()
 	scav.GuardGate();
 	frag.attack("asalek");
 	frag.highFivesGuys();
-	cout<<endl<<endl;
 	DiamondTrap dia("aaa");
 	dia.attack("bbbbB");
+	dia.whoAmI();
 }

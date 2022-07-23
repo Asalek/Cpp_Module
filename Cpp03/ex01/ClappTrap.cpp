@@ -1,5 +1,15 @@
 #include "ClappTrap.hpp"
 
+void	ClappTrapp::setName(string n){this->name = n;}
+void	ClappTrapp::setAD(int n){this->attackDamage = n;}
+void	ClappTrapp::setEP(int n){this->energyPoint = n;}
+void	ClappTrapp::setHP(int n){this->HitPoint = n;}
+
+string	ClappTrapp::getName(){return name;}
+int		ClappTrapp::getAD(){return attackDamage;}
+int		ClappTrapp::getHP(){return HitPoint;}
+int		ClappTrapp::getEP(){return energyPoint;}
+
 ClappTrapp::ClappTrapp()
 {
 	this->attackDamage = 0;
@@ -55,7 +65,7 @@ void	ClappTrapp::attack(const string &target)
 
 void	ClappTrapp::takeDamage(unsigned int damage)
 {
-	cout <<"ClapTrap "<< name << "got " << damage <<" points of damage!" << endl;
+	cout <<"ClapTrap "<< name << " got " << damage <<" points of damage!" << endl;
 	this->HitPoint -= damage;
 	if (HitPoint <= 0)
 		cout << name << "Died" << endl;	

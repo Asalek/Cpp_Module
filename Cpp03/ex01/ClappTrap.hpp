@@ -23,6 +23,15 @@ class ClappTrapp
 		~ClappTrapp();
 		ClappTrapp(const ClappTrapp &clapp);
 		ClappTrapp &operator=(const ClappTrapp &Clapp);
+//Setters & Getters
+		void	setHP(int);
+		void	setName(string);
+		void	setEP(int);
+		void	setAD(int);
+		int		getHP();
+		string	getName();
+		int		getEP();
+		int		getAD();
 };
 
 #endif

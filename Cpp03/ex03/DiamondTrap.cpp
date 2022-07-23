@@ -29,12 +29,5 @@ DiamondTrap::~DiamondTrap()
 
 void	DiamondTrap::attack(const string &target)
 {
-	if (this->getEP() > 0 && this->getHP() > 0)
-	{
-		this->setEP(this->getEP() - 1);
-		cout <<"DiamondTrap "<< this->getName() << " attacks " << target << \
-		", causing " << this->getAD() <<" points of damage!" << endl;
-	}
-	else
-		cout << "No Point Left" << endl;
+		ScavTrap::attack(target);
 }

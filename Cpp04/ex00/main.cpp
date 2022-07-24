@@ -13,6 +13,10 @@ int main()
 	j->makeSound();
 	meta->makeSound();
 
+	delete meta;
+	delete j;
+	delete i;
+
 	cout<<endl<<"/********** My Test **********\\"<<endl<<endl;
 
 	Cat cat_1;

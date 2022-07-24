@@ -2,6 +2,7 @@
 
 Animal::Animal()
 {
+	type = "EGG";
 	cout << "Animal Constructor Called" << endl;
 }
 
@@ -19,3 +20,7 @@ Animal::Animal(const Animal &animal)
 	*this = animal;
 }
 
+Animal::~Animal()
+{
+	cout << "Animal Destructor Called" << endl;
+}

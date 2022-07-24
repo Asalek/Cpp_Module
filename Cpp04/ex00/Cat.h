@@ -1,9 +1,14 @@
+#ifndef CAT_H
+#define CAT_H
 
 #include "Animal.h"
 
 class Cat: public Animal
 {
-	Cat();
-	~Cat();
-	void	MakeSound();
+	public:
+		Cat();
+		~Cat();
+		void	MakeSound()const;
 };
+
+#endif

@@ -11,7 +11,7 @@ Dog::~Dog()
 	cout << "Dog Destructor Called" << endl;
 }
 
-void	Dog::MakeSound()
+void	Dog::MakeSound()const
 {
 	cout << "Awooof Awooof" << endl;
 }

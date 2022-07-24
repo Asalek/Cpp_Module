@@ -11,7 +11,7 @@ Cat::~Cat()
 	cout << "Cat Destructor Called" << endl;
 }
 
-void	Cat::MakeSound()
+void	Cat::MakeSound()const
 {
 	cout << "MeooooooooW" << endl;
 }

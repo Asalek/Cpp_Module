@@ -1,4 +1,4 @@
-NAME = polymorphism
+NAME = Animal
 
 CPFLAGS = c++ -Wall -Wextra -Werror -std=c++98
 

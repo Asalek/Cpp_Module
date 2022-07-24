@@ -16,6 +16,8 @@ class Animal
 		Animal(const Animal &animal);
 		Animal &operator=(const Animal &animal);
 		~Animal();
+		string	getType()const;
+		void	MakeSound()const;
 };
 
 #endif

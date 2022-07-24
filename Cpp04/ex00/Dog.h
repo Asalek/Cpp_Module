@@ -1,9 +1,14 @@
+#ifndef DOG_H
+#define DOG_H
 
 #include "Animal.h"
 
 class Dog: public Animal
 {
-	Dog();
-	~Dog();
-	void	MakeSound();
+	public:
+		Dog();
+		~Dog();
+		void	MakeSound()const;
 };
+
+#endif

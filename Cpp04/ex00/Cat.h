@@ -8,7 +8,7 @@ class Cat: public Animal
 	public:
 		Cat();
 		~Cat();
-		void	MakeSound()const;
+		void	makeSound()const;
 };
 
 #endif

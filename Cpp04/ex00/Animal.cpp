@@ -29,7 +29,7 @@ Animal::~Animal()
 	cout << "Animal Destructor Called" << endl;
 }
 
-void	Animal::MakeSound()const
+void	Animal::makeSound()const
 {
 	cout << "Cracked" <<endl;
 }

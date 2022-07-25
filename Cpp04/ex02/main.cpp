@@ -4,6 +4,7 @@
 
 int main()
 {
+	// const Animal aa;
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 

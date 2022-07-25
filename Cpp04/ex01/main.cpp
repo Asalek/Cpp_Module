@@ -4,26 +4,23 @@
 
 int main()
 {
-	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	i->makeSound(); //will output the cat sound!
-	j->makeSound();
-	meta->makeSound();
 
-	cout<<endl<<"/********** My Test **********\\"<<endl<<endl;
+	delete j;
+	delete i;
 
-	Cat cat_1;
-	Animal *animal1 = &cat_1;
-	cout << animal1->getType()<<endl;
-	animal1->makeSound();
-	
-	Dog Dog_1;
-	Animal *animal2 = &Dog_1;
-	cout << animal2->getType()<<endl;
-	animal2->makeSound();
-	
+	cout<<endl<< "/*******My Own Test********\\" <<endl<<endl;
+
+	Animal *animal[4];
+
+	animal[0] = new Cat();
+	animal[1] = new Cat();
+	animal[2] = new Dog();
+	animal[3] = new Dog();
+	for (size_t i = 0; i < 4; i++)
+	{
+		delete animal[i];
+	}
 	return 0;	
 }

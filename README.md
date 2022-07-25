@@ -8,7 +8,7 @@ this is the 42 pool Cpp.
 * ex01 : My Awesome PhoneBook
 * ex02 : The Job Of Your Dreams
 
-</br>
+</hr>
 
 - C++ - Module 01: This Module is designed to help you understand the memory allocation, reference, pointers to members and the usage of the switch in CPP.
 ### CPP01
@@ -20,7 +20,7 @@ this is the 42 pool Cpp.
 * ex05 :  Harl 2.0
 * ex06 : Harl filter
 
-</br>
+</hr>
 
 - C++ - Module 02: This Module is designed to help you understand Ad-hoc polymorphism, overloads and orthodox canonical classes in CPP.
 ### CPP02
@@ -30,7 +30,7 @@ this is the 42 pool Cpp.
 * ex03 : Unnecessary violence
 * ex04 : BSP
 
-</br>
+</hr>
 
 - C++ - Module 03: This Module is designed to help you understand Inheritance in CPP.
 ### CPP03
@@ -39,7 +39,7 @@ this is the 42 pool Cpp.
 * ex02 : Repetitive work
 * ex03 : Now it’s weird!
 
-</br>
+</hr>
 
 - C++ - Module 04: this Module is designed to help you understand Subtype polymorphism, abstract classes and interfaces in CPP.
 ### CPP04
@@ -48,22 +48,22 @@ this is the 42 pool Cpp.
 * ex02 : Abstract class
 * ex03 : Interface & recap
 
-</br>
+</hr>
 
 - C++ - Module 05: This Module is designed to help you understand Try/Catch and Exceptions in CPP.
 ### CPP05
 
-</br>
+</hr>
 
 - C++ - Module 06: This Module is designed to help you understand the different casts in CPP.
 ### CPP06
 
-</br>
+</hr>
 
 - C++ - Module 07: This Module is designed to help you understand Templates in CPP.
 ### CPP07
 
-</br>
+</hr>
 
 - C++ - Module 08: This Module is designed to help you understand templated containers, iterators and algorithms in CPP.
 ### CPP08

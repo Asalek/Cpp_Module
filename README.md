@@ -1,3 +1,13 @@
+# CPP Tutorial :
+this is the 42 pool Cpp.
+roadMap :
+
+### CPP00
+* ex01 : Megaphone
+* ex02 : My Awesome PhoneBook
+* ex03 : The Job Of Your Dreams
+
+
 ## Name Spaces :
 
 name Spaces fix the double naming issue as bellow :

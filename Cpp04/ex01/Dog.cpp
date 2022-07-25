@@ -4,10 +4,12 @@ Dog::Dog()
 {
 	cout << "Dog Default Constructor Called" << endl;
 	this->type = "Dog";
+	this->brain = new Brain();
 }
 
 Dog::~Dog()
 {
+	delete this->brain;
 	cout << "Dog Destructor Called" << endl;
 }
 

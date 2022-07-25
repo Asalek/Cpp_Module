@@ -2,11 +2,13 @@
 this is the 42 pool Cpp.
 ### roadMap :
 
+- C++ - Module 00: This Module is designed to help you understand the specifities of the language when compared to C.
 ### CPP00
 * ex00 : Megaphone
 * ex01 : My Awesome PhoneBook
 * ex02 : The Job Of Your Dreams
 
+- C++ - Module 01: This Module is designed to help you understand the memory allocation, reference, pointers to members and the usage of the switch in CPP.
 ### CPP01
 * ex00 : BraiiiiiiinnnzzzZ
 * ex01 : Moar brainz!
@@ -16,6 +18,7 @@ this is the 42 pool Cpp.
 * ex05 :  Harl 2.0
 * ex06 : Harl filter
 
+- C++ - Module 02: This Module is designed to help you understand Ad-hoc polymorphism, overloads and orthodox canonical classes in CPP.
 ### CPP02
 * ex00 : My First Class in Orthodox Canonical Form
 * ex01 : Towards a more useful fixed-point number class
@@ -23,18 +26,28 @@ this is the 42 pool Cpp.
 * ex03 : Unnecessary violence
 * ex04 : BSP
 
+- C++ - Module 03: This Module is designed to help you understand Inheritance in CPP.
 ### CPP03
 * ex00 : Aaaaand... OPEN!
 * ex01 : Serena, my love!
 * ex02 : Repetitive work
 * ex03 : Now it’s weird!
 
+- C++ - Module 04: this Module is designed to help you understand Subtype polymorphism, abstract classes and interfaces in CPP.
 ### CPP04
 * ex00 :  Polymorphism
 * ex01 : I don’t want to set the world on fire
 * ex02 : Abstract class
 * ex03 : Interface & recap
 
+- C++ - Module 05: This Module is designed to help you understand Try/Catch and Exceptions in CPP.
+### CPP05
+- C++ - Module 06: This Module is designed to help you understand the different casts in CPP.
+### CPP06
+- C++ - Module 07: This Module is designed to help you understand Templates in CPP.
+### CPP07
+- C++ - Module 08: This Module is designed to help you understand templated containers, iterators and algorithms in CPP.
+### CPP08
 
 ## Name Spaces :
 
@@ -102,3 +115,36 @@ int main()
 Protected is similar to private, the difference is that the class member declared as Protected are inaccessible outside the class but they can be accessed by any subclass(derived class) of that class.
 
 <strong>Exemple:</strong><a href="https://www.geeksforgeeks.org/public-vs-protected-in-c-with-examples/">Click_me</a>
+
+
+## More Ressources
+
+* [C++ Tutorial for Beginners - Full Course](https://www.youtube.com/watch?v=vLnPwxZdW4Y&ab_channel=freeCodeCamp.org)
+* [Constructors in C++](https://www.geeksforgeeks.org/constructors-c/)
+* [Constructor Overloading in C++](https://www.geeksforgeeks.org/constructor-overloading-c/)
+* [Copy Constructor in C++](https://www.geeksforgeeks.org/copy-constructor-in-cpp/)
+* [Destructors in C++](https://www.geeksforgeeks.org/destructors-c/)
+* [Pointers vs References in C++](https://www.geeksforgeeks.org/pointers-vs-references-cpp/)
+* [Operator Overloading in C++](https://www.geeksforgeeks.org/operator-overloading-c/)
+* [OPERATORS and OPERATOR OVERLOADING in C++](https://www.youtube.com/watch?v=mS9755gF66w&ab_channel=TheCherno)
+* [C++ Operator Overloading beginner to advanced (in-depth explanation)](https://www.youtube.com/watch?v=BnMnozsSPmw&ab_channel=CodeBeauty)
+* [Find a Fixed Point (Value equal to index) in a given array](https://www.geeksforgeeks.org/find-a-fixed-point-in-a-given-array/)
+* [Const member functions in C++](https://www.geeksforgeeks.org/const-member-functions-c/)
+* [Increment (++) and Decrement (–) operator overloading in C++](https://www.geeksforgeeks.org/increment-and-decrement-operator-overloading-in-c/)
+* [Static Keyword in C++](https://www.geeksforgeeks.org/static-keyword-cpp/)
+* [stringstream in C++ and its applications](https://www.geeksforgeeks.org/stringstream-c-applications/)
+* [Multiple Inheritance in C++](https://www.geeksforgeeks.org/multiple-inheritance-in-c/)
+* [Virtual Function in C++](https://www.geeksforgeeks.org/virtual-function-cpp/)
+* [Polymorphism in C++](https://www.geeksforgeeks.org/polymorphism-in-c/)
+* [Exception Handling in C++](https://www.geeksforgeeks.org/exception-handling-c/)
+* [How to access private/protected method outside a class in C++](https://www.geeksforgeeks.org/how-to-access-private-protected-method-outside-a-class-in-c/)
+* [rand() and srand() in C/C++](https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/)
+* [Converting Strings to Numbers in C/C++](https://www.geeksforgeeks.org/converting-strings-numbers-cc/)
+* [Type Conversion in C++](https://www.geeksforgeeks.org/type-conversion-in-c/)
+* [Templates in C++ (article)](https://www.geeksforgeeks.org/templates-cpp/)
+* [Templates in C++ (Video)](https://www.youtube.com/watch?v=I-hZkUa9mIs&ab_channel=TheCherno)
+* [Casting in C++](https://www.youtube.com/watch?v=pWZS1MtxI-A&ab_channel=TheCherno)
+* [C++ Type Casting Playlist](https://www.youtube.com/playlist?list=PL1w8k37X_6L-KS5DQt7U0rCtgIgdIadWz)
+* [Polymorphism In C++ | Static & Dynamic Binding](https://www.youtube.com/watch?v=mv5_l4kuVho&ab_channel=CppNuts)
+* [Containers in C++ STL (Standard Template Library)](https://www.geeksforgeeks.org/containers-cpp-stl)
+* [Vector in C++ STL](https://www.geeksforgeeks.org/vector-in-cpp-stl/)

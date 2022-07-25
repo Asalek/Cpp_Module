@@ -3,9 +3,37 @@ this is the 42 pool Cpp.
 roadMap :
 
 ### CPP00
-* ex01 : Megaphone
-* ex02 : My Awesome PhoneBook
-* ex03 : The Job Of Your Dreams
+* ex00 : Megaphone
+* ex01 : My Awesome PhoneBook
+* ex02 : The Job Of Your Dreams
+
+### CPP01
+* ex00 : BraiiiiiiinnnzzzZ
+* ex01 : Moar brainz!
+* ex02 : HI THIS IS BRAIN
+* ex03 : Unnecessary violence
+* ex04 : Sed is for losers
+* ex05 :  Harl 2.0
+* ex06 : Harl filter
+
+### CPP02
+* ex00 : My First Class in Orthodox Canonical Form
+* ex01 : Towards a more useful fixed-point number class
+* ex02 : Now we’re talking
+* ex03 : Unnecessary violence
+* ex04 : BSP
+
+### CPP03
+* ex00 : Aaaaand... OPEN!
+* ex01 : Serena, my love!
+* ex02 : Repetitive work
+* ex03 : Now it’s weird!
+
+### CPP04
+* ex00 :  Polymorphism
+* ex01 : I don’t want to set the world on fire
+* ex02 : Abstract class
+* ex03 : Interface & recap
 
 
 ## Name Spaces :

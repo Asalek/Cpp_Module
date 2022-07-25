@@ -2,15 +2,15 @@
 this is the 42 pool Cpp.
 ### roadMap :
 
-- C++ - Module 00: This Module is designed to help you understand the specifities of the language when compared to C.
+<strong> C++ - Module 00: This Module is designed to help you understand the specifities of the language when compared to C.</strong>
 ### CPP00
 * ex00 : Megaphone
 * ex01 : My Awesome PhoneBook
 * ex02 : The Job Of Your Dreams
 
-</hr>
+<hr>
 
-- C++ - Module 01: This Module is designed to help you understand the memory allocation, reference, pointers to members and the usage of the switch in CPP.
+<strong> C++ - Module 01: This Module is designed to help you understand the memory allocation, reference, pointers to members and the usage of the switch in CPP.</strong>
 ### CPP01
 * ex00 : BraiiiiiiinnnzzzZ
 * ex01 : Moar brainz!
@@ -20,9 +20,9 @@ this is the 42 pool Cpp.
 * ex05 :  Harl 2.0
 * ex06 : Harl filter
 
-</hr>
+<hr>
 
-- C++ - Module 02: This Module is designed to help you understand Ad-hoc polymorphism, overloads and orthodox canonical classes in CPP.
+<strong> C++ - Module 02: This Module is designed to help you understand Ad-hoc polymorphism, overloads and orthodox canonical classes in CPP.</strong>
 ### CPP02
 * ex00 : My First Class in Orthodox Canonical Form
 * ex01 : Towards a more useful fixed-point number class
@@ -30,42 +30,42 @@ this is the 42 pool Cpp.
 * ex03 : Unnecessary violence
 * ex04 : BSP
 
-</hr>
+<hr>
 
-- C++ - Module 03: This Module is designed to help you understand Inheritance in CPP.
+<strong> C++ - Module 03: This Module is designed to help you understand Inheritance in CPP.</strong>
 ### CPP03
 * ex00 : Aaaaand... OPEN!
 * ex01 : Serena, my love!
 * ex02 : Repetitive work
 * ex03 : Now it’s weird!
 
-</hr>
+<hr>
 
-- C++ - Module 04: this Module is designed to help you understand Subtype polymorphism, abstract classes and interfaces in CPP.
+<strong> C++ - Module 04: this Module is designed to help you understand Subtype polymorphism, abstract classes and interfaces in CPP.</strong>
 ### CPP04
 * ex00 :  Polymorphism
 * ex01 : I don’t want to set the world on fire
 * ex02 : Abstract class
 * ex03 : Interface & recap
 
-</hr>
+<hr>
 
-- C++ - Module 05: This Module is designed to help you understand Try/Catch and Exceptions in CPP.
+<strong> C++ - Module 05: This Module is designed to help you understand Try/Catch and Exceptions in CPP.</strong>
 ### CPP05
 
 </hr>
 
-- C++ - Module 06: This Module is designed to help you understand the different casts in CPP.
+<strong> C++ - Module 06: This Module is designed to help you understand the different casts in CPP.</strong>
 ### CPP06
 
 </hr>
 
-- C++ - Module 07: This Module is designed to help you understand Templates in CPP.
+<strong> C++ - Module 07: This Module is designed to help you understand Templates in CPP.</strong>
 ### CPP07
 
 </hr>
 
-- C++ - Module 08: This Module is designed to help you understand templated containers, iterators and algorithms in CPP.
+<strong> C++ - Module 08: This Module is designed to help you understand templated containers, iterators and algorithms in CPP.</strong>
 ### CPP08
 
 ## Name Spaces :

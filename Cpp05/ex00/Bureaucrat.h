@@ -10,8 +10,9 @@ using std::ostream;
 
 class Bureaucrat
 {
-	const std::string name;
-	int		grade;
+	private:
+		const std::string name;
+		int		grade;
 	public:
 		Bureaucrat();
 		Bureaucrat(const Bureaucrat &bur);
@@ -24,6 +25,7 @@ class Bureaucrat
 		void	decrement();
 };
 
-ostream &operator<<(ostream out,const Bureaucrat &bur);
+ostream & operator << (ostream &out,const Bureaucrat &bur);
+
 
 #endif

@@ -68,6 +68,60 @@ this is the 42 pool Cpp.
 <strong> C++ - Module 08: This Module is designed to help you understand templated containers, iterators and algorithms in CPP.</strong>
 ### CPP08
 
+## Protected
+
+Protected is similar to private, the difference is that the class member declared as Protected are inaccessible outside the class but they can be accessed by any subclass(derived class) of that class.
+
+## Copy Constructor :
+
+Copy constructor takes a reference to an object of the same class as an argument and copying it in an already existing object :
+
+```
+class A{
+	int	num;
+	public:
+		A();			//Default constructor
+		~A();			//Destructor
+		A (const A &a);	//Copy constructor				<-------
+}
+
+A::A(const A &a)
+{
+	*this = a;
+}
+```
+
+## Copy assignment operator :
+
+The copy assignment operator lets you create a new object from an existing one by initialization and return it :
+
+```
+class A{
+	int	num;
+	public:
+		A();			//Default constructor
+		~A();			//Destructor
+		A &operator=(const A &a);	//Copy Assignment operator				<-------
+}
+
+A &A::operator(const A &a)
+{
+	if (this == &a)				//Self guard
+		return (*this);
+	this->num = a.num;
+	return (*this);
+}
+```
+
+## Orthodox Canonical Form :
+
+The Orthodox Canonical Form Class it's a class that must contains :
+
+- Default Constructor
+- Copy Constructor
+- Copy assignment operator
+- Destructor
+
 ## Name Spaces :
 
 name Spaces fix the double naming issue as bellow :
@@ -128,10 +182,6 @@ int main()
 	Name *n = new nickName();  //this work just fine cause you arrived the func1()
 }
 ```
-
-## Protected
-
-Protected is similar to private, the difference is that the class member declared as Protected are inaccessible outside the class but they can be accessed by any subclass(derived class) of that class.
 
 <strong>Exemple:</strong><a href="https://www.geeksforgeeks.org/public-vs-protected-in-c-with-examples/">Click_me</a>
 

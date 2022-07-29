@@ -113,6 +113,24 @@ A &A::operator(const A &a)
 }
 ```
 
+## Try Catch
+
+try{
+	...
+}
+catch (int sd)
+{
+	....
+}
+catch(const char * execption)
+{
+	...
+}
+catch(...)   //only 3
+{
+	cout<<"assfaf";
+}
+
 ## Orthodox Canonical Form :
 
 The Orthodox Canonical Form Class it's a class that must contains :

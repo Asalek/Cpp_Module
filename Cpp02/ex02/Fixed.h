@@ -24,9 +24,6 @@ class Fixed
 		Fixed(const int a);
 		Fixed(const float n);
 
-
-
-
 		Fixed	operator*(const Fixed &ff);
 		Fixed	operator++(void);
 		Fixed	operator++(int);

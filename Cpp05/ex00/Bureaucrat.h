@@ -1,23 +1,25 @@
-#ifdef CLASS
-#define CLASS
+#ifndef CLASS_A
+#define CLASS_A
 
 #include <iostream>
-using std::string
-using std::cout
-using std::endl
+
+using std::string;
+using std::cout;
+using std::endl;
+using std::ostream;
 
 class Bureaucrat
 {
-	private:
-		string name;
-		int		grade;
+	const std::string name;
+	int		grade;
 	public:
 		Bureaucrat();
 		Bureaucrat(const Bureaucrat &bur);
 		Bureaucrat &operator=(const Bureaucrat &bur);
 		~Bureaucrat();
-		string getNam();
-		string getGrade();
+		Bureaucrat(string name, int grade);
+		string	getName()const;
+		int		getGrade()const;
 		void	increment();
 		void	decrement();
 };

@@ -1,16 +1,12 @@
-NAME = bankSystem
+NAME = Bureaucrat
 
 CPFLAGS = c++ -Wall -Wextra -Werror -std=c++98
 
-CFILES = main.cpp Bureaucrat.cpp
-
-all : $(NAME)
-
-$(NAME) : $(CFILES)
-	$(CPFLAGS) $^ -o $@
+all :
+	$(CPFLAGS) $(wildcard *.cpp) -o $(NAME)
 
 clean :
-	rm -rf bankSystem
+	rm -rf $(NAME)
 
 fclean: clean
 

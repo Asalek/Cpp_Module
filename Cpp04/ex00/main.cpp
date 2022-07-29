@@ -28,6 +28,6 @@ int main()
 	Animal *animal2 = &Dog_1;
 	cout << animal2->getType()<<endl;
 	animal2->makeSound();
-	
+
 	return 0;	
 }

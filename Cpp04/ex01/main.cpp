@@ -22,5 +22,5 @@ int main()
 	{
 		delete animal[i];
 	}
-	return 0;	
+	return 0;
 }

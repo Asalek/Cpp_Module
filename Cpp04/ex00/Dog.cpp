@@ -15,3 +15,18 @@ void	Dog::makeSound()const
 {
 	cout << "Awooof Awooof" << endl;
 }
+
+Dog::Dog(const Dog &dog)
+{
+	cout << "Dog copy constructor Called" << endl;
+	*this = dog;
+}
+
+Dog	&Dog::operator=(const Dog &dog)
+{
+	cout << "Dog copy assignment operator Called" << endl;
+	if (this == &dog)
+		return (*this);
+	this->type = dog.getType();
+	return (*this);
+}

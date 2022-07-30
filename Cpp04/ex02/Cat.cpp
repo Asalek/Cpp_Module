@@ -9,8 +9,8 @@ Cat::Cat()
 
 Cat::~Cat()
 {
-	cout << "Cat Destructor Called" << endl;
 	delete this->brain;
+	cout << "Cat Destructor Called" << endl;
 }
 
 void	Cat::makeSound()const
@@ -31,6 +31,9 @@ Cat	&Cat::operator=(const Cat &cat)
 		return (*this);
 	this->type = cat.getType();
 	this->brain = new Brain();
-	this->brain = cat.brain;
+	for (size_t i = 0; i < 100; i++)
+	{
+		this->brain->ideas[i] = cat.brain->ideas[i];
+	}
 	return (*this);
 }

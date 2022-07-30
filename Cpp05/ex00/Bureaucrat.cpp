@@ -36,7 +36,7 @@ void	Bureaucrat::increment()
 		this->grade--;
 	}
 	else
-		throw "grade out of range";	
+		throw Bureaucrat::GradeTooHighException();	
 }
 
 void	Bureaucrat::decrement()
@@ -46,17 +46,21 @@ void	Bureaucrat::decrement()
 		grade++;
 	}
 	else
-		throw "grade out of range";
+		throw Bureaucrat::GradeTooLowException();
 }
 
 ostream &operator<<(ostream &out, const Bureaucrat &B)
 {
-	out << B.getName() << ", bureuacrat grade " << B.getGrade()<< "."<< endl;
+	out << B.getName() << ", bureauacrat grade " << B.getGrade()<< "."<< endl;
 	return out;
 }
 
 Bureaucrat::Bureaucrat(string n, int grad):name(n), grade(grad)
 {
+	if (grad > 150)
+		throw Bureaucrat::GradeTooLowException();
+	if (grad < 1)
+		throw Bureaucrat::GradeTooHighException();
 	cout << "Set name, grade Constructor Called"<<endl;
 }
 

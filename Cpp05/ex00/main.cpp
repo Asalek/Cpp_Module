@@ -2,20 +2,19 @@
 
 int main()
 {
-	Bureaucrat b("ayoub", 2);
-	Bureaucrat c("Kasol", 150);
+	Bureaucrat b("", 2);
+	Bureaucrat c("", 150);
 	Bureaucrat d;
 
 	try
 	{
 		b.increment();
+		b.increment();
+		cout << b << endl;
 	}
 	catch(std::exception& e)
 	{
-		// std::cerr << e.what() << '\n';
-		
+		cout << "Bureaucrat " << e.what() << '\n';
 	}
-	cout << b << endl;
-	cout << d << endl;
 	return 0;
 }

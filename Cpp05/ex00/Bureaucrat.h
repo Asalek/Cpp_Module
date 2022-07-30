@@ -23,6 +23,22 @@ class Bureaucrat
 		int		getGrade()const;
 		void	increment();
 		void	decrement();
+		class	GradeTooHighException: public std::exception
+		{
+			public:
+				const char	*what() const throw()  //this function is not expected to throw any exceptions. If it does, unexpected will be called
+				{
+					return "Grade Is Too High /** exception **\\";
+				}
+		};
+		class	GradeTooLowException: public std::exception
+		{
+			public:
+				const char	*what() const throw()
+				{
+					return "Grade Is Too Low";
+				}
+		};
 };
 
 ostream & operator << (ostream &out,const Bureaucrat &bur);

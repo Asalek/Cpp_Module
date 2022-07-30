@@ -113,7 +113,7 @@ A &A::operator(const A &a)
 }
 ```
 
-## Try Catch
+## Try And Catch
 
 try{
 	...

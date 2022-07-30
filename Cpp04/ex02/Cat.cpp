@@ -30,5 +30,7 @@ Cat	&Cat::operator=(const Cat &cat)
 	if (this == &cat)
 		return (*this);
 	this->type = cat.getType();
+	this->brain = new Brain();
+	this->brain = cat.brain;
 	return (*this);
 }

@@ -31,6 +31,9 @@ Dog	&Dog::operator=(const Dog &dog)
 		return (*this);
 	this->type = dog.getType();
 	this->brain = new Brain();
-	this->brain = dog.brain;
+	for(int i = 0; i < 100; i++)
+	{
+		this->brain->ideas[i] = dog.brain->ideas[i];
+	}
 	return (*this);
 }

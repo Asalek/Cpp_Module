@@ -21,6 +21,7 @@ void	Cat::makeSound()const
 Cat::Cat(const Cat &cat)
 {
 	cout << "Cat copy constructor Called" << endl;
+	this->brain = new Brain();
 	*this = cat;
 }
 
@@ -30,10 +31,6 @@ Cat	&Cat::operator=(const Cat &cat)
 	if (this == &cat)
 		return (*this);
 	this->type = cat.getType();
-	this->brain = new Brain();
-	for (size_t i = 0; i < 100; i++)
-	{
-		this->brain->ideas[i] = cat.brain->ideas[i];
-	}
+	*(this->brain) = *(cat.brain);
 	return (*this);
 }

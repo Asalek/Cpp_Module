@@ -18,9 +18,19 @@ int main()
 	animal[1] = new Cat();
 	animal[2] = new Dog();
 	animal[3] = new Dog();
+
 	for (size_t i = 0; i < 4; i++)
 	{
 		delete animal[i];
 	}
+
+//	Deep Copy to the brain
+	cout<<endl<< "/*******My Own Test********\\" <<endl<<endl;
+
+	Cat *cat = new Cat();
+	Cat d = *cat;
+
+	d.makeSound();
+	delete cat;
 	return 0;
 }

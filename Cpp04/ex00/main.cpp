@@ -1,6 +1,8 @@
 #include "Animal.h"
 #include "Dog.h"
 #include "Cat.h"
+#include "WrongCat.h"
+#include "WrongAnimal.h"
 
 int main()
 {
@@ -29,5 +31,10 @@ int main()
 	cout << animal2->getType()<<endl;
 	animal2->makeSound();
 
+	cout<<endl<<"/********** The Wrong Test **********\\"<<endl<<endl;
+
+	const WrongAnimal* Wrongcat = new WrongCat();
+	Wrongcat->makeSound();
+	delete Wrongcat;
 	return 0;	
 }

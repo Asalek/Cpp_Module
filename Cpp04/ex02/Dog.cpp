@@ -21,6 +21,7 @@ void	Dog::makeSound()const
 Dog::Dog(const Dog &dog)
 {
 	cout << "Dog copy constructor Called" << endl;
+	this->brain = new Brain();
 	*this = dog;
 }
 
@@ -30,7 +31,6 @@ Dog	&Dog::operator=(const Dog &dog)
 	if (this == &dog)
 		return (*this);
 	this->type = dog.getType();
-	this->brain = new Brain();
 	for(int i = 0; i < 100; i++)
 	{
 		this->brain->ideas[i] = dog.brain->ideas[i];

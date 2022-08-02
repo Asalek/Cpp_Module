@@ -9,7 +9,7 @@ bool	Form::getSign  () const{return this->sign;}
 
 /* Constructors Destructor */
 
-Form::Form():name("NO_name"), grade(2), exec(2)
+Form::Form():name("NO_name"), grade(20), exec(20)
 {
 	cout<<"Default Constructor Called"<<endl;
 	this->sign = false;
@@ -55,7 +55,7 @@ ostream &operator<<(ostream &out, const Form &form)
 
 void	Form::beSigned(Bureaucrat &buro)
 {
-	if (buro.getGrade() < 20)
+	if (buro.getGrade() < this->grade)
 		this->sign = true;
 	else
 		throw Form::GradeTooLowException();

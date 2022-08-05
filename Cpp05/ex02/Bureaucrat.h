@@ -2,11 +2,12 @@
 #define CLASS_A
 
 #include <iostream>
-
 using std::string;
 using std::cout;
 using std::endl;
 using std::ostream;
+
+class Form;
 
 class Bureaucrat
 {
@@ -39,6 +40,7 @@ class Bureaucrat
 					return "Grade Is Too Low";
 				}
 		};
+		void	executeForm(Form const &form);
 };
 
 ostream & operator << (ostream &out,const Bureaucrat &bur);

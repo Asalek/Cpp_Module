@@ -20,7 +20,7 @@ RobotomyRequestForm &RobotomyRequestForm::operator=(const RobotomyRequestForm &r
 	return *this;
 }
 
-RobotomyRequestForm::RobotomyRequestForm(string target):Form("no_name", 72, 45)
+RobotomyRequestForm::RobotomyRequestForm(string target):Form(target, 72, 45)
 {
 	this->target = target;
 }

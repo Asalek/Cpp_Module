@@ -1,4 +1,5 @@
 #include "Bureaucrat.h"
+#include "Form.h"
 
 string	Bureaucrat::getName()const{return this->name;}
 int		Bureaucrat::getGrade()const{return this->grade;}
@@ -57,6 +58,28 @@ Bureaucrat::Bureaucrat(string n, int grad):name(n), grade(grad)
 		throw Bureaucrat::GradeTooLowException();
 	if (grad < 1)
 		throw Bureaucrat::GradeTooHighException();
+}
+
+void	Bureaucrat::executeForm(const Form &form)
+{
+	if (this->getGrade() > form.getExec())
+	{
+		cout << "Couldn't execute it"<<endl;
+		throw Form::GradeTooLowException();
+	}
+	if (this->getGrade() <= 0)
+	{
+		cout << "Couldn't execute it"<<endl;
+		throw Form::GradeTooHighException();
+	}
+	if (form.getSign() != true)
+	{
+		cout << "Couldn't execute it"<<endl;
+		cout << "NOT SIGNED !!!!!!" << endl;
+		return ;
+	}
+	cout << this->name << " Executed " << form.getName() << endl;
+	form.execute(*this);
 }
 
 /*

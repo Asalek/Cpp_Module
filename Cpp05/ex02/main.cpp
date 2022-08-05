@@ -8,6 +8,7 @@ int main()
 {
 	Bureaucrat b("Ayoub", 2);
 	Bureaucrat c("hamza", 150);
+	Bureaucrat test("TESTTT", 5);
 
 	ShruForm	shru("asalek");
 	RobotomyRequestForm Robot("Robot");
@@ -25,6 +26,7 @@ int main()
 		Presi.beSigned(b);
 		Presi.execute(b);
 		// Robot.execute(c);
+		test.executeForm(Presi);
 	}
 	catch(std::exception& e)
 	{

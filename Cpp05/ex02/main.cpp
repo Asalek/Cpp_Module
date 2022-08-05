@@ -2,6 +2,7 @@
 #include "Form.h"
 #include "ShrubberyCreationForm.h"
 #include "RobotomyRequestForm.h"
+#include "PresidentialPardonForm.h"
 
 int main()
 {
@@ -10,6 +11,7 @@ int main()
 
 	ShruForm	shru("asalek");
 	RobotomyRequestForm Robot("Robot");
+	PresidentialPardonForm Presi("Peri");
 	
 	try
 	{
@@ -20,6 +22,8 @@ int main()
 		// shru.execute(c);
 		Robot.beSigned(b);
 		Robot.execute(b);
+		Presi.beSigned(b);
+		Presi.execute(b);
 		// Robot.execute(c);
 	}
 	catch(std::exception& e)

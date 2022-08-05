@@ -13,7 +13,8 @@ int main()
 		b.increment();
 		cout << b << endl;
 		a.beSigned(b);
-		a.execute(b);
+		// a.execute(b);
+		a.execute(c);
 	}
 	catch(std::exception& e)
 	{

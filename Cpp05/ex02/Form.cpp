@@ -11,30 +11,25 @@ bool	Form::getSign  () const{return this->sign;}
 
 Form::Form():name("NO_name"), grade(2), exec(2)
 {
-	cout<<"Default Constructor Called"<<endl;
 	this->sign = false;
 }
 
 Form::~Form()
 {
-	cout << "Default Destructor Called" << endl;
 }
 
 Form::Form(string name, int grade, int exec):name(name), grade(grade), exec(exec)
 {
-	cout << "Assignment Constructor Called" << endl;
 	this->sign = false;
 }
 
 Form::Form(const Form & form):name(form.name), grade(form.grade), exec(form.exec)
 {
-	cout << "Copy Constructor Called" << endl;
 	*this = form;
 }
 
 Form	&Form::operator=(const Form &f)
 {
-	cout << "Copy assignment Operator Called" << endl;
 	if (this == &f)
 		return *this;
 	this->sign = f.sign;

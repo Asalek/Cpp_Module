@@ -5,19 +5,16 @@ int		Bureaucrat::getGrade()const{return this->grade;}
 
 Bureaucrat::Bureaucrat():name("NO_name")
 {
-	cout<<"Default Constructor Called"<<endl;
 	this->grade = 150;
 }
 
 Bureaucrat::Bureaucrat(const Bureaucrat &buro)
 {
-	cout<<"Copy constructor Called"<<endl;
 	*this = buro;
 }
 
 Bureaucrat	&Bureaucrat::operator=(const Bureaucrat &buro)
 {
-	cout<<"Copy Assignment Operator Called"<<endl;
 	if (this == &buro)
 		return *this;
 	this->grade = buro.grade;
@@ -26,7 +23,6 @@ Bureaucrat	&Bureaucrat::operator=(const Bureaucrat &buro)
 
 Bureaucrat::~Bureaucrat()
 {
-	cout << "Destructor Called"<<endl;
 }
 
 void	Bureaucrat::increment()
@@ -61,7 +57,6 @@ Bureaucrat::Bureaucrat(string n, int grad):name(n), grade(grad)
 		throw Bureaucrat::GradeTooLowException();
 	if (grad < 1)
 		throw Bureaucrat::GradeTooHighException();
-	cout << "Set name, grade Constructor Called"<<endl;
 }
 
 /*

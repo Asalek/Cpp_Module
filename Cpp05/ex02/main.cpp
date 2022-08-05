@@ -1,20 +1,26 @@
 #include "Bureaucrat.h"
-#include "ShrubberyCreationForm.h"
 #include "Form.h"
+#include "ShrubberyCreationForm.h"
+#include "RobotomyRequestForm.h"
 
 int main()
 {
 	Bureaucrat b("Ayoub", 2);
 	Bureaucrat c("hamza", 150);
-	Bureaucrat d;
-	ShruForm	a("asalek");
+
+	ShruForm	shru("asalek");
+	RobotomyRequestForm Robot("Robot");
+	
 	try
 	{
 		b.increment();
 		cout << b << endl;
-		a.beSigned(b);
+		shru.beSigned(b);
 		// a.execute(b);
-		a.execute(c);
+		// shru.execute(c);
+		Robot.beSigned(b);
+		Robot.execute(b);
+		// Robot.execute(c);
 	}
 	catch(std::exception& e)
 	{

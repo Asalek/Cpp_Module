@@ -34,45 +34,42 @@ ShruForm::~ShruForm(){}
 
 void	ShruForm::execute(Bureaucrat const &executor)const
 {
-	string fileName = this->getName();
+	string fileName = this->target;
 	fileName.append("_shrubbery");
 	if (executor.getGrade() > 145)
 		throw GradeTooLowException();
-	else if (this->getSign() == false)
+	if (this->getSign() == false)
 	{
 		cout << "Bureaucrat Not Signed !!"<< endl;
 		return ;
 	}
-	else
+	ofstream	file(fileName);
+	if (file.is_open())
 	{
-		ofstream	file(fileName);
-		if (file.is_open())
-		{
-			file << "			                      ___ \n";
-			file << "                _,-'""   """"`--. \n";
-			file << "             ,-'          __,,-- \\ \n";
-			file << "           ,'    __,--""""dF      ) \n";
-			file << "          /   .-\"Hb_,--""dF      /  \n";
-			file << "        ,'       _Hb ___dF\"-._,-' \n";
-			file << "      ,'      _,-""""   ""--..__ \n";
-			file << "     (     ,-'                  `. \n";
-			file << "      `._,'     _   _             ; \n";
-			file << "       ,'     ,' `-'Hb-.___..._,-' \n";
-			file << "       \\    ,'\"Hb.-'HH`-.dHF\" \n";
-			file << "        `--'   \"Hb  HH  dF\" \n";
-			file << "                \"Hb HH dF \n";
-			file << "                 \"HbHHdF \n";
-			file << "                  |HHHF \n";
-			file << "                  |HHH| \n";
-			file << "                  |HHH| \n";
-			file << "                  |HHH| \n";
-			file << "                  |HHH| \n";
-			file << "                  dHHHb \n";
-			file << "                .dFd|bHb.               o \n";
-			file << "      o       .dHFdH|HbTHb.          o / \n";
-			file << "  Y  |  __,dHHFdHH|HHhoHHb.__Krogg  Y \n";
-			file << "########################################## \n";
-			file.close();
-		}
+		file << "			                      ___ \n";
+		file << "                _,-'""   """"`--. \n";
+		file << "             ,-'          __,,-- \\ \n";
+		file << "           ,'    __,--""""dF      ) \n";
+		file << "          /   .-\"Hb_,--""dF      /  \n";
+		file << "        ,'       _Hb ___dF\"-._,-' \n";
+		file << "      ,'      _,-""""   ""--..__ \n";
+		file << "     (     ,-'                  `. \n";
+		file << "      `._,'     _   _             ; \n";
+		file << "       ,'     ,' `-'Hb-.___..._,-' \n";
+		file << "       \\    ,'\"Hb.-'HH`-.dHF\" \n";
+		file << "        `--'   \"Hb  HH  dF\" \n";
+		file << "                \"Hb HH dF \n";
+		file << "                 \"HbHHdF \n";
+		file << "                  |HHHF \n";
+		file << "                  |HHH| \n";
+		file << "                  |HHH| \n";
+		file << "                  |HHH| \n";
+		file << "                  |HHH| \n";
+		file << "                  dHHHb \n";
+		file << "                .dFd|bHb.               o \n";
+		file << "      o       .dHFdH|HbTHb.          o / \n";
+		file << "  Y  |  __,dHHFdHH|HHhoHHb.__Krogg  Y \n";
+		file << "########################################## \n";
+		file.close();
 	}
 }

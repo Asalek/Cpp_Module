@@ -8,12 +8,14 @@ using std::fstream;   // combine of READ WRITE CREATE
 
 class ShruForm: public Form
 {
+	string	target;
 	public:
 		ShruForm();
 		~ShruForm();
 		ShruForm(const ShruForm &s);
 		ShruForm &operator=(const ShruForm &s);
-		ShruForm(const Form &s);
+		ShruForm(string t);
+		void	execute(Bureaucrat const &executor) const;
 };
 
 #endif

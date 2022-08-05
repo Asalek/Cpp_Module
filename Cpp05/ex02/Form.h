@@ -36,6 +36,7 @@ class Form
 		};
 		void 	beSigned(Bureaucrat &);
 		void	signForm(Bureaucrat &);
+		virtual void	execute(Bureaucrat const &executor) const = 0;
 }; 
 
 ostream &operator<<(ostream &out, const Form &form);

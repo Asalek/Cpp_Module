@@ -9,6 +9,6 @@ clean :
 	rm -rf $(NAME)
 
 fclean: clean
-	rm -rf zafir_shrubbery
+	rm -rf *_shrubbery
 
 re : clean all

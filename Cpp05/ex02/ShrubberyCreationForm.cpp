@@ -1,14 +1,49 @@
 #include "ShrubberyCreationForm.h"
 #include <fstream>
 
-ShruForm::ShruForm()
-{}
+/*      constructors     */
 
-ShruForm::ShruForm(const Form &form)
+ShruForm::ShruForm():Form("no_name", 145, 137)
 {
-	string fileName = form.getName();
+	target = "ASALEK";
+}
+
+ShruForm::ShruForm(string target):Form(target, 145, 137)
+{
+	this->target = target;
+}
+
+ShruForm::ShruForm(const ShruForm &shru)
+{
+	*this = shru;
+}
+
+ShruForm	&ShruForm::operator=(const ShruForm &shru)
+{
+	if (this == &shru)
+		return *this;
+	this->target = shru.target;
+	return *this;
+}
+
+//			Destructor    
+
+ShruForm::~ShruForm(){}
+
+//			methods
+
+void	ShruForm::execute(Bureaucrat const &executor)const
+{
+	string fileName = this->getName();
 	fileName.append("_shrubbery");
-	if (form.getExec() == 137 && form.getGrade() == 145)
+	if (executor.getGrade() > 145)
+		throw GradeTooLowException();
+	else if (this->getSign() == false)
+	{
+		cout << "Bureaucrat Not Signed !!"<< endl;
+		return ;
+	}
+	else
 	{
 		ofstream	file(fileName);
 		if (file.is_open())
@@ -41,35 +76,3 @@ ShruForm::ShruForm(const Form &form)
 		}
 	}
 }
-
-ShruForm::~ShruForm()
-{}
-
-/*
-
-                      ___
-                _,-'""   """"`--.
-             ,-'          __,,-- \
-           ,'    __,--""""dF      )
-          /   .-"Hb_,--""dF      /
-        ,'       _Hb ___dF"-._,-'
-      ,'      _,-""""   ""--..__
-     (     ,-'                  `.
-      `._,'     _   _             ;
-       ,'     ,' `-'Hb-.___..._,-'
-       \    ,'"Hb.-'HH`-.dHF"
-        `--'   "Hb  HH  dF"
-                "Hb HH dF
-                 "HbHHdF
-                  |HHHF
-                  |HHH|
-                  |HHH|
-                  |HHH|
-                  |HHH|
-                  dHHHb
-                .dFd|bHb.               o
-      o       .dHFdH|HbTHb.          o /
-\  Y  |  \__,dHHFdHH|HHhoHHb.__Krogg  Y
-##########################################
-
-*/

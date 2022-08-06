@@ -21,6 +21,7 @@ Form	*Intern::makeForm(string formName, string formTarget)
 {
 	int formType[3];
 	Form *formTypeForm[3];
+	size_t	j = 20;
 
 	formTypeForm[0] = new ShruForm(formTarget);
 	formTypeForm[1] = new RobotomyRequestForm(formTarget);
@@ -33,10 +34,15 @@ Form	*Intern::makeForm(string formName, string formTarget)
 		while (formType[i] == 1)
 		{
 			cout << "Intern creates " << formType[i] << endl;
-			return formTypeForm[i];
+			// return formTypeForm[i];
+			j = i;
+			break;
 		}
-		delete formTypeForm[i];
+		if (j != i)
+			delete formTypeForm[i];
 	}
+	if (j < 3)
+		return formTypeForm[j];
 	cout << "Form Type Doesn't exists & and a NULL pointer Returned" << endl;
 	return NULL;
 }

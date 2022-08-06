@@ -50,7 +50,7 @@ ostream &operator<<(ostream &out, const Form &form)
 
 void	Form::beSigned(Bureaucrat &buro)
 {
-	if (buro.getGrade() < 20)
+	if (buro.getGrade() < this->getGrade())
 		this->sign = true;
 	else
 		throw Form::GradeTooLowException();
@@ -58,7 +58,7 @@ void	Form::beSigned(Bureaucrat &buro)
 
 void	Form::signForm(Bureaucrat &buro)
 {
-	if (this->sign == true && buro.getGrade() < 20)
+	if (this->sign == true && buro.getGrade() < this->getGrade())
 		cout << buro.getName() << " Signed " << this->getName() << endl;
 	else
 		cout << buro.getName() << " couldn't sign " << this->getName() << \

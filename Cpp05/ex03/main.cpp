@@ -32,7 +32,9 @@ int main()
 		Intern random;
 		Form	*rrf;
 
-		rrf = random.makeForm("shru", "AYOUUUUB");
+		rrf = random.makeForm("shrua", "AYOUUUUB");
+		if (rrf == NULL)
+			return (cout<<"NULL POINTER FOUND && CAN'T BE WORK WITH"<<endl, 1);
 		rrf->beSigned(b);
 		rrf->signForm(b);
 		rrf->execute(b);

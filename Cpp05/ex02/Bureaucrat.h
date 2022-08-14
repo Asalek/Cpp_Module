@@ -7,7 +7,7 @@ using std::cout;
 using std::endl;
 using std::ostream;
 
-class Form;
+class Form;			//forward declaration
 
 class Bureaucrat
 {

@@ -63,7 +63,7 @@ void	Form::beSigned(Bureaucrat &buro)
 
 void	Form::signForm(Bureaucrat &buro)
 {
-	if (this->sign == true && buro.getGrade() < 20)
+	if (this->sign == true && buro.getGrade() < this->getGrade())
 		cout << buro.getName() << " Signed " << this->getName() << endl;
 	else
 		cout << buro.getName() << " couldn't sign " << this->getName() << \

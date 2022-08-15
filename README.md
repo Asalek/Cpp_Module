@@ -52,12 +52,18 @@ this is the 42 pool Cpp.
 
 <strong> C++ - Module 05: This Module is designed to help you understand Try/Catch and Exceptions in CPP.</strong>
 ### CPP05
+* ex00 :  Try & Catch excepiton
+* ex01 : Inheret from Execption Class
+* ex02 : Put All To gether
+* ex03 : Froms Creator
 
 </hr>
 
 <strong> C++ - Module 06: This Module is designed to help you understand the different casts in CPP.</strong>
 ### CPP06
-
+* ex00 :  Static_cast
+* ex01 : reinterpret_cast
+* ex02 : Dynamic_cast
 </hr>
 
 <strong> C++ - Module 07: This Module is designed to help you understand Templates in CPP.</strong>

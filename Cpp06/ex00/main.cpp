@@ -11,15 +11,12 @@ int main(int ac, char **av)
 	}
 	try
 	{
-		cout << sc.getType() << endl;
+		sc.getType(av[1]);
 		sc.printf_all();
 	}
 	catch(const std::exception& e)
 	{
 		std::cerr << e.what() << '\n';
 	}
-	
-
-
 	return 0;
 }

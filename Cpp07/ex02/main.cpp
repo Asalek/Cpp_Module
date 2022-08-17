@@ -1,9 +1,37 @@
 #include <iostream>
 #include "Array.hpp"
 
+
 #define MAX_VAL 750
 int main(int, char**)
 {
+
+	// MY Beutiful main :
+
+	Array<string> a(5);
+	a[0] = "ayoub";
+	a[1] = "salek";
+	a[2] = "1337";
+	a[3] = "junior";
+	a[4] = "developer";
+	Array<string> b = a;
+	for (size_t i = 0; i < 5; i++)
+	{
+		cout << "a" << a[i] << endl;
+		cout << "b" << b[i] << endl;
+	}
+	for (size_t i = 0; i < 5; i++)
+	{
+		a[i] = "100%";
+	}
+	for (size_t i = 0; i < 5; i++)
+	{
+		cout << "a" << a[i] << endl;
+		cout << "b" << b[i] << endl;
+	}
+	
+	//Intra  Cpp07 main
+
     Array<int> numbers(MAX_VAL);
     int* mirror = new int[MAX_VAL];
     srand(time(NULL));

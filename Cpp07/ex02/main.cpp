@@ -4,13 +4,7 @@
 #define MAX_VAL 750
 int main(int, char**)
 {
-	Array<string> a(5);
-	Array<string> b;
-
-	cout << a.getArray()[0] << endl;
-	cout << b.getArray() << endl;
-
-    /*Array<int> numbers(MAX_VAL);
+    Array<int> numbers(MAX_VAL);
     int* mirror = new int[MAX_VAL];
     srand(time(NULL));
     for (int i = 0; i < MAX_VAL; i++)
@@ -54,6 +48,6 @@ int main(int, char**)
     {
         numbers[i] = rand();
     }
-    delete [] mirror;//*/
+    delete [] mirror;
     return 0;
 }

@@ -27,10 +27,8 @@ class Array
 				array = nullptr;
 				return ;
 			}
-			array = new T[n];
-			while (n--)
-				array[n] = nullptr;
-			// 	array[n] = nullptr;		nullptr but string not a pointer this will work fine with string*
+			array = new(std::nothrow) T[n];
+			// 	array[n] = nullptr;		nullptr, but string not a pointer this will work fine with string*
 		}
 	//Copy constructor ::
 		Array(const Array &a)
@@ -45,7 +43,7 @@ class Array
 			if (ar.size > 0)
 			{
 				delete [] this->array;
-				array = new T[ar.size];
+				array = new(std::nothrow) T[ar.size];
 				this->size = 0;
 				while (this->size < ar.size)
 				{
@@ -55,14 +53,22 @@ class Array
 			}
 			return *this;
 		}
+	//Subscript operator 
+	T	&operator[](int i)
+	{
+		if (i > -1 && i <= (int)this->size)
+			return array[i];
+		else
+			throw myexception();
+	}
 	//Getters ::
-	T *getArray(){return array;}
+	// T *getArray(){return array;}
 	//Exceptions Derrived Class ::
 		class myexception : public std::exception
 		{
 			const char *what() const throw()
 			{
-				return "ERROR";
+				return "\033[0;31mERROR";
 			}
 		};
 };

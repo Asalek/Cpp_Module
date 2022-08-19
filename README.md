@@ -68,7 +68,9 @@ this is the 42 pool Cpp.
 
 <strong> C++ - Module 07: This Module is designed to help you understand Templates in CPP.</strong>
 ### CPP07
-
+* ex00 :  Templates
+* ex01 : Templates with functions
+* ex02 : 
 </hr>
 
 <strong> C++ - Module 08: This Module is designed to help you understand templated containers, iterators and algorithms in CPP.</strong>

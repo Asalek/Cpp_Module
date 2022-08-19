@@ -24,7 +24,7 @@ int main()
 			---LIST---
 	front, back, empty, size, max_size, insert, emplace, push_back, 
 	pop_back, push_front, resize, remove_if, remove, unique, merge, 
-	pop_front, sort, reverse, clear, oprator= ...
+	pop_front, sort, reverse, clear, oprator=, find ...
 
 
 
@@ -35,4 +35,6 @@ int main()
 
 	unique: remove duplecate
 		ex__ list1.unique();
+
+	find : find(list.begin(), list.end(), number);
 */

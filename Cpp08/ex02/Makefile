@@ -1,12 +1,10 @@
-NAME = iter
-
 CPFLAGS = c++ -Wall -Wextra -Werror -std=c++98
 
 all :
-	$(CPFLAGS) $(wildcard *.cpp) -o $(NAME)
+	$(CPFLAGS) $(wildcard *.cpp) -o mute
 
 clean :
-	rm -rf $(NAME)
+	rm -rf mute
 
 fclean: clean
 

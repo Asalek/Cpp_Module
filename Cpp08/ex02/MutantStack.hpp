@@ -3,14 +3,40 @@
 #ifndef MUTANT_H
 #define MUTANT_H
 
-template <typename T>
-class MutantStack
+#include <iostream>
+#include <stack>
+#include <deque>
+#include <list>
+#include <algorithm>
+
+using std::list;
+
+template <typename T, class container=std::deque<T> >
+class MutantStack : public std::stack<T>
 {
 	public:
-		MutantStack();
-		MutantStack(const MutantStack &stack);
-		MutantStack &operator=(const MutantStack &stack);
-		~MutantStack();
+		MutantStack(){}
+		~MutantStack(){}
+		MutantStack(const MutantStack &stack)
+		{
+			*this = stack;
+		}
+		MutantStack &operator=(const MutantStack &stack)
+		{
+			if (this == &stack)
+				return *this;
+			return *this;
+			this->c = stack->c;
+		}
+		typedef typename container::iterator iterator;
+		iterator begin()
+		{
+			return this->c.begin();
+		}
+		iterator end()
+		{
+			return this->c.end();
+		}
 };
 
 #endif

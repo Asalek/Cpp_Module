@@ -26,7 +26,7 @@ class MutantStack : public std::stack<T>
 			if (this == &stack)
 				return *this;
 			return *this;
-			this->c = stack->c;
+			*(this->c) = stack->c;    // will cope deeply even if you didn't reference it
 		}
 		typedef typename container::iterator iterator;
 		iterator begin()

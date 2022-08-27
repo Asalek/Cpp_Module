@@ -285,3 +285,4 @@ vector<int, allocator<int> > v1;
 * [Polymorphism In C++ | Static & Dynamic Binding](https://www.youtube.com/watch?v=mv5_l4kuVho&ab_channel=CppNuts)
 * [Containers in C++ STL (Standard Template Library)](https://www.geeksforgeeks.org/containers-cpp-stl)
 * [Vector in C++ STL](https://www.geeksforgeeks.org/vector-in-cpp-stl/)
+* [STL Custom Allocators for C++](https://www.youtube.com/watch?v=v-qePUHf8iU&ab_channel=AnInsightfulTechie)

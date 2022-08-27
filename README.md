@@ -70,11 +70,18 @@ this is the 42 pool Cpp.
 ### CPP07
 * ex00 :  Templates
 * ex01 : Templates with functions
-* ex02 : 
+* ex02 : Templates With Classes
 </hr>
 
 <strong> C++ - Module 08: This Module is designed to help you understand templated containers, iterators and algorithms in CPP.</strong>
 ### CPP08
+* ex00 :  Easy Find
+* ex01 : Span
+* ex02 : MutantStack
+
+<i>for the <strong> Mutant_Stack </strong> i put a question on stackoverflow and i respond on it when i've found the solution check the link : </i>
+	https://stackoverflow.com/questions/73440733/how-can-i-implement-my-own-stack-iterator-in-c/73441074#73441074
+</hr>
 
 ## Protected
 

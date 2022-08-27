@@ -218,6 +218,41 @@ int main()
 }
 ```
 
+## STL Custom Allocators 
+
+```
+using std::cout;		//using it now to save time later
+using std::endl;
+using std::allocator;
+
+template<typename type>
+struct MyAlloc : allocator<type>			// creating a struct and inheret an allocator
+{
+	type	*allocate(size_t size)
+	{
+		cout << "Allocation size ==> " << size << endl;
+		return new type[size];
+	}
+	void	deallocate(type *ptr, size_t size)
+	{
+		cout << "Deallocating size ==> "<< size << endl;
+		delete [] ptr;
+	}
+};
+
+int main(){
+	vector<int, MyAlloc<int> >v1;
+
+	v1.push_back(1); // Allocation size ==> 1
+	v1.push_back(2); // Allocation size ==> 2 // Deallocating size ==> 1
+	v1.puds_back(3); // Allocation size ==> 4 // Deallocating size ==> 2
+	return 0; 		// Deallocating size ==> 4
+}
+
+vector<int, MyAlloc<int> >v1; // this implementation is similar to vector<int> v1. the only difference is that :
+when not specify the allocator the default one (allocator) been called like this :
+vector<int, allocator<int> > v1;
+```
 
 ## More Ressources
 

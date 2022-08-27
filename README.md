@@ -79,7 +79,7 @@ this is the 42 pool Cpp.
 * ex01 : Span
 * ex02 : MutantStack
 
-<i>for the <strong> Mutant_Stack </strong> i put a question on stackoverflow and i respond on it when i've found the solution check the link : </i>
+<i>for the <strong> Mutant_Stack </strong> i put a question on stackoverflow and i respond it when i've found the solution, check the link : </i>
 	https://stackoverflow.com/questions/73440733/how-can-i-implement-my-own-stack-iterator-in-c/73441074#73441074
 </hr>
 

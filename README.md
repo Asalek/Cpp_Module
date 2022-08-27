@@ -86,6 +86,7 @@ this is the 42 pool Cpp.
 ## Protected
 
 Protected is similar to private, the difference is that the class member declared as Protected are inaccessible outside the class but they can be accessed by any subclass(derived class) of that class.
+
 <strong>Exemple:</strong><a href="https://www.geeksforgeeks.org/public-vs-protected-in-c-with-examples/">Click_me</a>
 
 ## Copy Constructor :

@@ -130,6 +130,24 @@ A &A::operator(const A &a)
 }
 ```
 
+## Typename
+
+The keyword typename was introduced to specify that the identifier that follows is a type. Consider the following example:
+
+```
+template <class T>
+Class MyClass
+{
+  typename T::aType *ptr;
+  ...
+};
+```
+Here, typename is used to clarify that aType is a type of class T. Thus, ptr is a pointer to the type T::aType. Without typename, aType would be considered a static member. Thus would be a multiplication of value SubType of type T with ptr :
+
+```
+T::aType x ptr;  //  aType multiply ptr
+```
+
 ## Try And Catch
 ```
 try{
